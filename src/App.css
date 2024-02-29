@@ -1,0 +1,445 @@
+@font-face {
+  font-family: 'Mi Cappuccino Thin';
+  src: url('/public/fonts/MiCappuccinoThin.ttf') format('truetype');
+
+  font-family: 'FC Iconic Rounded';
+  src: url('/public/fonts/FC Iconic Rounded.otf') format('truetype');
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-height: 600px) {
+  .input-container {
+    height: 400px;
+  }
+
+}
+
+/***************/
+
+body {
+  margin: 0;
+  overflow-x: hidden;  
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.app {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  max-width: 100vw;
+  max-height: 100vh;
+}
+
+/***********HOME Page*************/
+/*********Navbar*********/
+
+.navbar-home {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  height: 85px;
+  background-color: white;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 0 0 30px 30px;
+  max-width: 100vw;
+  max-height: 100vh;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  padding: 0px 0px 0px 15px ;
+  max-width: 100vw;
+  max-height: 100vh;
+  
+}
+
+.logo {
+  width: 90px;
+  height: 90px;
+  margin-right: 10px;
+  margin-left: 10px;
+  max-width: 100vw;
+  max-height: 100vh;
+}
+
+/* .logo:hover {
+  scale: 1.2;
+} */
+
+.web-name {
+  font-family: 'FC Iconic Rounded', sans-serif;
+  font-size: 30px;
+  font-weight: bold; 
+  color: #4B4B4B; 
+  max-width: 100vw;
+  max-height: 100vh;
+}
+
+.about {
+  font-family: 'FC Iconic Rounded', sans-serif;
+  font-size: 20px;
+  font-weight: bold; 
+  color: #4B4B4B;
+  display: flex;
+  align-items: center;
+  padding-right: 30px;
+  max-width: 100vw;
+  max-height: 100vh;
+
+}
+
+.container-home {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  max-width: 100vw;
+  max-height: 100vh;
+  margin: 10px;
+}
+
+.container-right-home {
+  width: 30%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  max-width: 100vw;
+  max-height: 100vh;
+}
+
+.nav-container-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10%;
+  width: 100%;
+  /* border: 3px solid rgb(214, 6, 197); */
+  max-width: 100vw;
+  max-height: 100vh;
+}
+
+#name-text {
+  background-color: #D9D9D9;
+  border: none;
+  font-family: 'FC Iconic Rounded', sans-serif;
+  font-size: 12px;
+  border-radius: 20px;
+  height: 50%;
+  width: 65%; 
+  margin: 10px 5px 10px 10px;
+  padding: 5px 5px 5px 10px;
+}
+
+#name-text:focus {
+  outline: none;
+}
+
+.save-name-button {
+  font-family: 'FC Iconic Rounded', sans-serif;
+  font-weight: bold;
+  font-size: 0.75rem;
+  text-align: center;
+  background-color: #FF9B7D;
+  border-radius: 20px;
+  border: none;
+  height: 50%;
+  width: 20%; 
+  margin: 10px 10px 10px 0px;
+  cursor: pointer;
+  max-width: 100vw;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  height: 570px;
+  width: 60%;
+  border: none;
+  border-radius: 20px;
+  background-color: white;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  max-width: 100vw;
+  max-height: 100vh;
+}
+
+.name-box {
+  font-family: 'FC Iconic Rounded', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100vw;
+  max-height: 100vh;
+}
+
+.name-box-out {
+  margin: 0px 20px 10px;
+  height: 500px;
+  width: 100%;
+  overflow: auto;
+  font-size: 15px;
+  /* border: 3px solid rgb(30, 255, 255); */
+  max-width: 100vw;
+  max-height: 100vh;
+}
+
+.delete-name-button {
+  font-size: 15px;
+  background-color: transparent; 
+  border: none; 
+  outline: none; 
+  cursor: pointer;
+  font-family: 'FC Iconic Rounded', sans-serif;
+  font-weight: bold;
+  color: red;
+  font-size: 16px;
+  max-width: 100vw;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+.container-left-home {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 70%;
+  margin-right: 20px;
+  max-width: 100vw;
+  max-height: 100vh;
+  margin: 10px;
+}
+
+.input-container {
+  margin: 10px;
+  width: 85%;
+  height: 570px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  border-radius: 20px;
+  background-color: white;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  max-width: 100vw;
+  max-height: 100vh;
+}
+
+#textbox {
+  height: 90%;
+  width: 100%;
+  margin: 10px 0px 0px 0px;
+  font-size: large;
+  padding: 15px;
+  border: none;
+  resize: none;
+  font: initial;
+  border-radius: 20px;
+}
+
+#textbox:focus {
+  outline: none;
+}
+
+.my-button {
+  width: 15%;
+  margin: 0px 20px 20px;
+  padding: 7px 22px;
+  font-size: 16px;
+  font-family: 'FC Iconic Rounded', sans-serif;
+  text-align: center;
+  cursor: pointer;
+  background-color: #FF9B7D;
+  color: black;
+  border: none;
+  border-radius: 30px;
+  transition: background-color 0.3s;
+  overflow: clip;
+  max-width: 100vw;
+  max-height: 100vh;
+}
+
+.my-button:hover {
+  background-color: white;
+}
+
+/*********OUTPUT Page*********/
+/*********Navbar*********/
+
+.container-output-page {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  width: 100vw;
+  height: 100vh;
+  max-width: 100vw;
+  max-height: 100vh;
+}
+
+.navbar-output-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  height: 85px;
+  background-color: white;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 0 0 30px 30px;
+}
+
+.logo-container-output-page {
+  display: flex;
+  align-items: center;
+  padding: 10px 0px;
+  margin-right: 20px;
+}
+
+.logo-output-page {
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+  /* border: 3px solid black; */
+}
+
+.web-name-output-page {
+  font-family: 'FC Iconic Rounded', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: #4B4B4B; 
+}
+
+.my-back-button {
+  padding: 5px 25px;
+  margin-left: 30px;
+  font-size: 20px;
+  font-family: 'FC Iconic Rounded', sans-serif;
+  text-align: center;
+  cursor: pointer;
+  background-color: #FF9B7D;
+  color: black;
+  border: none;
+  border-radius: 30px;
+  transition: background-color 0.3s;
+}
+
+.my-back-button:hover {
+  background-color: white;
+}
+
+/************Content**************/
+/*********Left Side*********/
+.container-left {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  width: 50%;
+  height: 650px;
+  margin: 0px 50px;
+}
+
+#textbox-output {
+  font-size: medium;
+  background-color: white;
+  width: 100%;
+  height: calc(100% - 30px);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 20px;
+  padding: 15px;
+  border: none;
+  resize: none;
+  overflow: auto;
+}
+
+#textbox-output:focus {
+  outline: none;
+}
+/*********Right Side*********/
+
+.container-right {
+  width: 50%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+/*************Table*************/
+.styled-table {
+  height: 100%;
+  width: 90%;
+  border-collapse: collapse;
+  font-family: 'FC Iconic Rounded', sans-serif;
+  font-size: 16px;
+  background-color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.styled-table thead tr {
+  background-color: #FF9B7D;
+  color: #ffffff;
+  text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.change-button {
+  padding: 5px 25px;
+  background-color: #FF9B7D;
+  color: white;
+  border-radius: 30px;
+  border: none;
+}
+
+/***********Modal**********/
+.css-modal {
+  font-family: 'FC Iconic Rounded', sans-serif;
+}
+
+.modal-button {
+  padding: 5px 25px;
+  background-color: #FF9B7D;
+  color: black;
+  border-radius: 30px;
+  border: none;
+}
+
+.modal-footer {
+  justify-content: center;
+}
+
+.modal-header h4 {
+  margin-bottom: 0;
+}
+
+/*********scrollbar**********/
+
+::-webkit-scrollbar {
+  width: 12px; /* กว้างของ scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* สีของ track */
+}
+
+/* สไตล์ของ thumb (ส่วนที่ให้ลาก) */
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 6px;
+}
+
+/* สไตล์ของ corner (มุมของ scrollbar) */
+::-webkit-scrollbar-corner {
+  background-color: #f1f1f1;
+}
+
+
+
+
